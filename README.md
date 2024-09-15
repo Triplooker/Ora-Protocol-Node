@@ -41,3 +41,7 @@ docker logs ora-tora -f -n 100
 - If you see something like this, it means, it is working fine
 
 ![image](https://github.com/user-attachments/assets/d0f46d5f-159d-40a4-8cf7-21111f899a6f)
+
+- You can also check via [Sepolia Explorer](https://sepolia.etherscan.io), If you see your wallet address is interacting with this contract `0x0A0f4321214BB6C7811dD8a71cF587bdaF03f0A0` , it means it is good
+
+![image](https://github.com/user-attachments/assets/c256b783-8786-4123-8931-a85051e646db)
