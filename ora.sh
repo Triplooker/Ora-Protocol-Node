@@ -83,10 +83,12 @@ EOF
 
 echo
 read -p "Enter your private key: " PRIV_KEY
-read -p "Enter your Alchemy WSS URL for Ethereum Mainnet: " MAINNET_WSS
-read -p "Enter your Alchemy HTTP URL for Ethereum Mainnet: " MAINNET_HTTP
-read -p "Enter your Alchemy WSS URL for Sepolia Ethereum: " SEPOLIA_WSS
-read -p "Enter your Alchemy HTTP URL for Sepolia Ethereum: " SEPOLIA_HTTP
+read -p "Enter your Alchemy API key: " ALCHEMY_API_KEY
+
+MAINNET_WSS="wss://eth-mainnet.g.alchemy.com/v2/$ALCHEMY_API_KEY"
+MAINNET_HTTP="https://eth-mainnet.g.alchemy.com/v2/$ALCHEMY_API_KEY"
+SEPOLIA_WSS="wss://eth-sepolia.g.alchemy.com/v2/$ALCHEMY_API_KEY"
+SEPOLIA_HTTP="https://eth-sepolia.g.alchemy.com/v2/$ALCHEMY_API_KEY"
 
 cat <<EOF > .env
 ############### Sensitive config ###############
